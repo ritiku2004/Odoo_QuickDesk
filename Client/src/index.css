@@ -1,1 +1,8 @@
 @import "tailwindcss";
+/* src/index.css */
+
+/* Optional custom styles below */
+body {
+  @apply bg-gray-100 text-gray-900;
+  font-family: 'Inter', sans-serif;
+}
