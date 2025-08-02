@@ -1,5 +1,8 @@
 # Odoo QuickDesk Helpdesk System
 
+## Live Demo
+[https://odoo-quick-desk-mauve.vercel.app/](https://odoo-quick-desk-mauve.vercel.app/)
+
 ## Project Overview
 Odoo QuickDesk is a full-stack helpdesk/ticketing system built with Node.js/Express (backend), React (frontend), MongoDB, and Tailwind CSS. It supports role-based dashboards for Admin, Agent, and User, ticket management, and email notifications via EmailJS.
 
