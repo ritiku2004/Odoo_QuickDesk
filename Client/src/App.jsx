@@ -7,6 +7,7 @@ import UserRoutes from './pages/user/routes.jsx';
 import AdminRoutes from './pages/admin/routes.jsx';
 import AgentRoutes from './pages/agent/routes.jsx';
 import TicketDetailPage from './pages/user/TicketDetailPage.jsx'; // Importing TicketDetailPage
+import LoginPage from './pages/public/LoginPage.jsx';
 
 function App() {
   return (
@@ -18,25 +19,7 @@ function App() {
           {UserRoutes}
           {AgentRoutes}
           {AdminRoutes}
-          <Route
-  path="*"
-  element={
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 text-gray-800 px-6">
-      <h1 className="text-6xl font-bold text-blue-600 mb-4">404</h1>
-      <p className="text-xl font-semibold mb-2">Page Not Found</p>
-      <p className="text-sm text-gray-500 mb-6 text-center">
-        Sorry, the page you're looking for doesn’t exist or has been moved.
-      </p>
-      <a
-        href="/"
-        className="px-5 py-2 text-sm font-medium bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
-      >
-        Go to Home
-      </a>
-    </div>
-  }
-/>
-
+          <Route path="*" element={LoginPage} />
           <Route path="/unauthorized" element={<div>404 Unauthorized</div>} />
         </Routes>
       </BrowserRouter>
