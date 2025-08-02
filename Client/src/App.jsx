@@ -19,7 +19,7 @@ function App() {
           {UserRoutes}
           {AgentRoutes}
           {AdminRoutes}
-          <Route path="*" element={LoginPage} />
+          <Route path="*" element={<LoginPage></LoginPage>} />
           <Route path="/unauthorized" element={<div>404 Unauthorized</div>} />
         </Routes>
       </BrowserRouter>
